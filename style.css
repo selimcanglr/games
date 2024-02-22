@@ -58,3 +58,21 @@ footer {
   padding: 10px 0;
   font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+  .card img {
+    height: 200px; /* Smaller height for images */
+  }
+
+  .card {
+    width: 250px;
+    flex-basis: calc(
+      50% - 20px
+    ); /* Adjust card width to fit 2 cards per row with gap */
+    margin: 10px; /* Ensure there's space around the cards */
+  }
+
+  .card-container {
+    gap: 10px; /* Smaller gap between cards */
+  }
+}
